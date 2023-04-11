@@ -24,12 +24,111 @@
     <title>Daily Planer</title>
   </head>
   <body>
-    <nav></nav>
     <header>
-      <h1></h1>
-      <div class="level"></div>
-      <div class="calender"></div>
-      <div class="categories"></div>
+      <!-- importent -->
+
+      <!--   
+    <label for="categories">Level importance</label>
+    <select name="level">
+      <option value="low">Low</option>
+      <option value="relevant">Relevant</option>
+      <option value="very">Very Necessary</option>
+      <option value="life">Life Changed</option>
+    </select> -->
+      <div class="flex">
+        <div>
+          <h1 class="daily">DAILY PLANER</h1>
+          <p class="creates">Planning creates success!</p>
+
+          <!-- uhr -->
+          <div class="container">
+            <h2 id="current-time"></h2>
+            <div class="quotes"></div>
+          </div>
+        </div>
+
+        <div>
+          <nav>
+            <button>Reset</button>
+          </nav>
+
+          <!--Begin Tabelle -->
+          <div class="kalender">
+            <table id="calendar">
+              <tr>
+                <td class="’calendar_head‘">
+                  <a class="’calendar_link‘" href="’javascript:prevMonth()‘">
+                    &laquo;</a
+                  >
+                </td>
+                <td
+                  colspan="5"
+                  class="’calendar_head_month‘"
+                  id="’calendar_month‘"
+                >
+                  April
+                </td>
+                <td class="’calendar_head‘">
+                  <a class="’calendar_link‘" href="’javascript:nextMonth()‘">
+                    &raquo;</a
+                  >
+                </td>
+              </tr>
+              <tr class="wochentage">
+                <td class="calendar_day">Mo</td>
+                <td class="calendar_day">Di</td>
+                <td class="calendar_day">Mi</td>
+                <td class="calendar_day">Do</td>
+                <td class="calendar_day">Fr</td>
+                <td class="calendar_day">Sa</td>
+                <td class="calendar_day">So</td>
+              </tr>
+              <tr class="calender_numbers">
+                <td>01</td>
+                <td>02</td>
+                <td>03</td>
+                <td>04</td>
+                <td>05</td>
+                <td>06</td>
+                <td>07</td>
+              </tr>
+              <tr class="calender_numbers">
+                <td>08</td>
+                <td>09</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+              </tr>
+              <tr class="calender_numbers">
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+              </tr>
+              <tr class="calender_numbers">
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+              </tr>
+              <tr class="calender_numbers">
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!--Ende Tabelle -->
+      </div>
     </header>
     <main>
       <div class="container">
