@@ -1,0 +1,87 @@
+/* font-family: 'Dosis', sans-serif; 200/400/700*/
+
+*{
+    margin: 0 auto;  
+    padding: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  
+  /* beginn header */
+  
+  .flex{
+    display:flex;
+    margin-left:40%;
+    padding: 50px;
+  }
+  
+  .daily{
+      font-family: 'Dosis', sans-serif;
+      font-weight: 200; 
+      font-size: 4rem;
+      padding: 20px;
+  }
+  
+  .creates{
+    padding: 20px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200; 
+    margin-left:7% ;
+    font-size: 2rem;
+  }
+  
+  
+  
+  
+  /* uhr */
+  .container{
+    font-family: 'Dosis', sans-serif;
+      font-weight: 200; 
+      font-size: 1.7em;
+      padding: 20px;
+  } 
+  
+  #current-time{
+    padding: 30px;
+  }
+  
+  .quotes{
+  }
+  
+  
+  /* tabelle - Kalender*/
+  
+  .kalender{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200; 
+    margin-left: 10%;
+    font-size: 2rem;
+    padding: 30px;
+    }
+  
+  .wochentage{
+    padding: 10px;
+  
+  }
+  
+  
+  #calender tr td{
+  position: absolute;
+  }
+  
+  .calendar_day {
+  font-size: 2rem;
+  padding: 20px;
+  }
+  
+  .calender_numbers{
+    padding: 100px;
+    border: solid;
+    font-size: 1.2rem;
+  }
+  
+  
+  
+  
+  /* ende header */
+  
