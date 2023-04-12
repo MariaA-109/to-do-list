@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+    <title>Daily Planer</title>
+  </head>
+  <body>
+    <header>
+      <!-- importent -->
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700&family=Inconsolata:wght@500;600;700;800&family=Nunito+Sans:wght@200;800&family=Oswald:wght@700&family=Rubik+Iso&family=Ubuntu:wght@700&display=swap"
-    rel="stylesheet">
-
-  <title>Daily Planer</title>
-</head>
-
-<body>
-
-  <header>
-
-    <!-- importent -->
-
-
-    <!--   
+      <!--   
     <label for="categories">Level importance</label>
     <select name="level">
       <option value="low">Low</option>
@@ -31,34 +35,45 @@
       <option value="very">Very Necessary</option>
       <option value="life">Life Changed</option>
     </select> -->
-    <div class="flex">
+      <div class="flex">
+        <div>
+          <h1 class="daily">DAILY PLANER</h1>
+          <p class="creates">Planning creates success!</p>
 
-      <div>
-        <h1 class="daily">DAILY PLANER</h1>
-        <p class="creates">Planning creates success!</p>
-
-        <!-- uhr -->
-        <div class="container">
-          <h2 id="current-time"></h2>
-          <div class="quotes"></div>
+          <!-- uhr -->
+          <div class="container">
+            <h2 id="current-time"></h2>
+            <div class="quotes"></div>
+          </div>
         </div>
-      </div>
 
-      <div>
-        <nav>
-          <button>Reset</button>
-        </nav>
+        <div>
+          <nav>
+            <button>Reset</button>
+          </nav>
 
-
-
-        <!--Begin Tabelle -->
-        <div class="kalender">
-          <table id="calendar">
-            <tr>
-              <td class=’calendar_head‘><a class=’calendar_link‘ href=’javascript:prevMonth()‘> &laquo;</a></td>
-              <td colspan=5 class=’calendar_head_month‘ id=’calendar_month‘>April</td>
-              <td class=’calendar_head‘><a class=’calendar_link‘ href=’javascript:nextMonth()‘> &raquo;</a></td>
-            </tr>
+          <!--Begin Tabelle -->
+          <div class="kalender">
+            <table id="calendar">
+              <tr>
+                <td class="’calendar_head‘">
+                  <a class="’calendar_link‘" href="’javascript:prevMonth()‘">
+                    &laquo;</a
+                  >
+                </td>
+                <td
+                  colspan="5"
+                  class="’calendar_head_month‘"
+                  id="’calendar_month‘"
+                >
+                  April
+                </td>
+                <td class="’calendar_head‘">
+                  <a class="’calendar_link‘" href="’javascript:nextMonth()‘">
+                    &raquo;</a
+                  >
+                </td>
+              </tr>
               <tr class="wochentage">
                 <td class="calendar_day">Mo</td>
                 <td class="calendar_day">Di</td>
@@ -109,32 +124,71 @@
                 <td>30</td>
                 <td>31</td>
               </tr>
-          </table>
+            </table>
+          </div>
+        </div>
+        <!--Ende Tabelle -->
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="weekday">
+          <h2>Monday</h2>
+          <button id="push-day">+</button>
+        </div>
+        <div class="weekday">
+          <h2>Tuesday</h2>
+          <button id="push-day">+</button>
+        </div>
+        <div class="weekday">
+          <h2>Wednesday</h2>
+          <button id="push-day">+</button>
+        </div>
+        <div class="weekday">
+          <h2>Thursday</h2>
+          <button id="push-day">+</button>
+        </div>
+        <div class="weekday">
+          <h2>Friday</h2>
+          <button id="push-day">+</button>
+        </div>
+        <div id="addedTasks">
+          <div class="circle"></div>
+          <div id="to-dos">example</div>
+          <p class="inputText"></p>
+        </div>
+        <div id="addedTasks">
+          <div class="circle"></div>
+          <div id="to-dos">example</div>
+          <p class="inputText"></p>
+        </div>
+        <div id="addedTasks">
+          <div class="circle"></div>
+          <div id="to-dos">example</div>
+          <p class="inputText"></p>
+        </div>
+        <div id="addedTasks">
+          <div class="circle"></div>
+          <div id="to-dos">example</div>
+          <p class="inputText"></p>
+        </div>
+        <div id="addedTasks">
+          <div class="circle"></div>
+          <div id="to-dos">example</div>
+          <p class="inputText"></p>
+        </div>
+        <div id="addedTasks">
+          <div class="circle"></div>
+          <div id="to-dos">example</div>
+          <p class="inputText"></p>
         </div>
       </div>
-      <!--Ende Tabelle -->
-    </div>
-
-
-
-
-  </header>
-
-
-  <main>
-    <div class="container">
-      <div class="monday"></div>
-      <div class="tuesday"></div>
-      <div class="wednesday"></div>
-      <div class="thursday"></div>
-      <div class="friday"></div>
-    </div>
-  </main>
-
-  <footer>
-    <button>Add</button>
-  </footer>
-  <script src="script.js"></script>
-</body>
-
+    </main>
+    <footer>
+      <div class="footer">
+        <button class="add">Add</button>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
