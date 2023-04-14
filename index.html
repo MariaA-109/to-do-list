@@ -25,51 +25,37 @@
   </head>
   <body>
     <header>
-      <!-- importent -->
-
-      <!--   
-    <label for="categories">Level importance</label>
-    <select name="level">
-      <option value="low">Low</option>
-      <option value="relevant">Relevant</option>
-      <option value="very">Very Necessary</option>
-      <option value="life">Life Changed</option>
-    </select> -->
+     
+      <nav>
+            <button id="resetBtn">Reset</button>
+            <div class="clockContainer">
+            <p id="current-time"></p>
+          </div>
+        <div>
+      </nav>
       <div class="flex">
+        
         <div>
           <h1 class="daily">DAILY PLANER</h1>
           <p class="creates">Planning creates success!</p>
 
           <!-- uhr -->
-          <div class="container">
-            <h2 id="current-time"></h2>
-            <div class="quotes"></div>
-          </div>
-        </div>
-
-        <div>
-          <nav>
-            <button>Reset</button>
-          </nav>
+          
 
           <!--Begin Tabelle -->
           <div class="kalender">
             <table id="calendar">
               <tr>
-                <td class="’calendar_head‘">
-                  <a class="’calendar_link‘" href="’javascript:prevMonth()‘">
+                <td class="calendar_head">
+                  <a class="calendar_link" href="javascript:prevMonth()">
                     &laquo;</a
                   >
                 </td>
-                <td
-                  colspan="5"
-                  class="’calendar_head_month‘"
-                  id="’calendar_month‘"
-                >
+                <td colspan="5" class="calendar_head_month" id="calendar_month">
                   April
                 </td>
-                <td class="’calendar_head‘">
-                  <a class="’calendar_link‘" href="’javascript:nextMonth()‘">
+                <td class="calendar_head">
+                  <a class="calendar_link" href="javascript:nextMonth()">
                     &raquo;</a
                   >
                 </td>
@@ -132,63 +118,35 @@
     </header>
     <main>
       <div class="container">
-        <div class="weekday">
+        <div class="weekday" id="Monday">
           <h2>Monday</h2>
-          <button id="push-day">+</button>
+          <button class="push-day">+</button>
+          <div class="addedTasks"></div>
         </div>
-        <div class="weekday">
+        <div class="weekday" id="Tuesday">
           <h2>Tuesday</h2>
-          <button id="push-day">+</button>
+          <button class="push-day">+</button>
+          <div class="addedTasks"></div>
         </div>
-        <div class="weekday">
+        <div class="weekday" id="Wednesday">
           <h2>Wednesday</h2>
-          <button id="push-day">+</button>
+          <button class="push-day">+</button>
+          <div class="addedTasks"></div>
         </div>
-        <div class="weekday">
+        <div class="weekday" id="Thursday">
           <h2>Thursday</h2>
-          <button id="push-day">+</button>
+          <button class="push-day">+</button>
+          <div class="addedTasks"></div>
         </div>
-        <div class="weekday">
+        <div class="weekday" id="Friday">
           <h2>Friday</h2>
-          <button id="push-day">+</button>
-        </div>
-        <div id="addedTasks">
-          <div class="circle"></div>
-          <div id="to-dos">example</div>
-          <p class="inputText"></p>
-        </div>
-        <div id="addedTasks">
-          <div class="circle"></div>
-          <div id="to-dos">example</div>
-          <p class="inputText"></p>
-        </div>
-        <div id="addedTasks">
-          <div class="circle"></div>
-          <div id="to-dos">example</div>
-          <p class="inputText"></p>
-        </div>
-        <div id="addedTasks">
-          <div class="circle"></div>
-          <div id="to-dos">example</div>
-          <p class="inputText"></p>
-        </div>
-        <div id="addedTasks">
-          <div class="circle"></div>
-          <div id="to-dos">example</div>
-          <p class="inputText"></p>
-        </div>
-        <div id="addedTasks">
-          <div class="circle"></div>
-          <div id="to-dos">example</div>
-          <p class="inputText"></p>
-        </div>
-      </div>
+          <button class="push-day">+</button>
+          <div class="addedTasks"></div>
+        </div>  
     </main>
-    <footer>
-      <div class="footer">
-        <button class="add">Add</button>
-      </div>
-    </footer>
     <script src="index.js"></script>
+     <footer>
+      <nav></nav>
+    </footer>
   </body>
 </html>

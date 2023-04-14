@@ -1,23 +1,29 @@
-//plus: id="push-day"
-
 // ADD TASK
-let pushButton = document.getElementById("push-day");
-let toDo = document.getElementById("to-dos");
-let inputField = document.getElementById("newTask");
-let deleteBtn = document.querySelector(".delete");
+const pushDayButtons = document.querySelectorAll(".push-day");
+const resetButton = document.getElementById("resetBtn");
 
-function newTask(e) {
-  e.preventDefault();
-  let pushButton = prompt("Add new Task");
-  if (pushButton !== null) {
-    console.log(pushButton, "Hello");
-    return (document.getElementById("to-dos").innerHTML = pushButton);
-  } else {
-    prompt("You have to write something");
-  }
-}
-pushButton.addEventListener("click", newTask);
-("use strict");
+// Loop through each push day button
+pushDayButtons.forEach((button) => {
+  // Add a click event listener to each push day button
+  button.addEventListener("click", () => {
+    // Prompt the user for the new todo item
+    const newTodo = prompt("Add a To Do");
+
+    // Get the added tasks div for the current push day button
+    const addedTasksDiv = button.parentNode.querySelector(".addedTasks");
+
+    // Create a new todo div and append it to the added tasks div
+    const newTodoDiv = document.createElement("div");
+    newTodoDiv.classList.add("addedTask");
+    newTodoDiv.innerHTML = `
+      <div class="circle"></div>
+      <div class="to-dos">${newTodo}</div>
+      <p class="inputText"></p>
+    `;
+    addedTasksDiv.appendChild(newTodoDiv);
+  });
+});
+
 // ADD TASK ENDE
 
 // UHR START
