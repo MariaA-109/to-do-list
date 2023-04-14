@@ -1,109 +1,185 @@
-/* font-family: 'Dosis', sans-serif; 200/400/700*/
-
 * {
   margin: 0 auto;
   padding: 0 auto;
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Dosis", sans-serif;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 30px;
+}
+
 /* beginn header */
+nav {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  background-color: #ff9898;
+  width: 100%;
+  height: 80px;
+  /* border: 1px solid blue; */
+}
+
+#resetBtn {
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  height: 50px;
+  width: 20%;
+  margin-top: 1rem;
+  border: none;
+  color: white;
+  background-color: #a08ebb;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+}
 
 .flex {
   display: flex;
-  margin-left: 40%;
-  padding: 50px;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem;
+  /* border: 1px solid blue; */
 }
 
 .daily {
+  text-align: center;
+  padding: 20px;
   font-family: "Dosis", sans-serif;
   font-weight: 200;
-  font-size: 4rem;
-  padding: 20px;
+  font-size: 2rem;
+  /* border: 1px solid yellow; */
 }
 
 .creates {
   padding: 20px;
   font-family: "Dosis", sans-serif;
   font-weight: 200;
-  margin-left: 7%;
   font-size: 2rem;
+  /* border: 1px solid yellow; */
 }
 
 /* uhr */
-.container {
-  font-family: "Dosis", sans-serif;
-  font-weight: 200;
-  font-size: 1.7em;
-  padding: 20px;
+
+.clockContainer {
+  box-sizing: content-box;
+  text-align: center;
+  font-size: 20px;
+  height: 50px;
+  width: 20%;
+  margin-top: 1rem;
+  border: none;
+  color: white;
+  background-color: #a08ebb;
+  outline: none;
+  border-radius: 5px;
 }
 
 #current-time {
-  padding: 30px;
-}
-
-.quotes {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.8rem;
+  font-size: 20px;
 }
 
 /* tabelle - Kalender*/
-
 .kalender {
-  font-family: "Dosis", sans-serif;
-  font-weight: 200;
-  margin-left: 10%;
-  font-size: 2rem;
-  padding: 30px;
+  font-size: 20px;
+  padding: 1rem;
+  margin: 1.5rem;
+  font-weight: 700;
+  border: 1px solid yellow;
 }
 
 .wochentage {
-  padding: 10px;
+  padding: 1rem;
 }
 
 #calender tr td {
   position: absolute;
+
+  /* border: 1px solid pink; */
 }
 
 .calendar_day {
-  font-size: 2rem;
-  padding: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 1.5rem;
+
+  /* border: 1px solid red; */
 }
 
 .calender_numbers {
-  padding: 100px;
+  padding: 1rem;
   border: solid;
-  font-size: 1.2rem;
+  font-size: 12px;
+  font-weight: 200;
+  /* border: 1px solid green; */
 }
-
+.calendar_link {
+  color: #a08ebb;
+}
 /* ende header */
-body {
-  font-family: "Dosis", sans-serif;
-  margin: 0 auto;
-}
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
   text-align: center;
+  height: 50vh;
   padding: 2rem;
-  /* border: 1px solid red; */
+  font-weight: 200;
+  font-size: 1.7em;
+  /* border: 1px solid green; */
 }
 
 .weekday {
+  display: grid;
+  height: 40px;
+  grid-template-columns: auto 1fr;
+  justify-items: center;
+  /* border: 1px solid green; */
+}
+
+.addedTasks {
+  width: 100%;
+}
+
+.addedTask {
   display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.circle {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #ff9898;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+}
+
+.to-dos {
+  background-color: #d9e4fc;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 0.5rem;
 }
 
 .inputText {
-  margin: 0;
   cursor: pointer;
-  padding: 1rem;
   border-radius: 5px;
   /* border: 1px solid red; */
 }
 
-#push-day {
+.push-day {
   font-size: 30px;
-  height: 40%;
-  margin: 1.2rem 0rem 0rem 0.5rem;
+  height: 50%;
+  margin: 0.3rem 0rem 0rem 0.5rem;
   border: none;
   color: #a08ebb;
   background-color: white;
@@ -112,43 +188,14 @@ body {
   border-radius: 5px;
   /* border: 1px solid blue; */
 }
-#addedTasks {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  margin: 1rem;
-  /* border: 1px solid blue; */
-}
 
-.circle {
-  cursor: pointer;
-  border-radius: 50%;
-  border: 2px solid #ff9898;
-  height: 20px;
-  width: 20px;
-  margin-right: 0.5rem;
-}
-
-#to-dos {
-  background-color: #ff9898;
-  border-radius: 5px;
-  width: 80%;
-}
-.footer {
-  display: flex;
-  background-color: #ff9898;
-  justify-content: center;
-  width: 100%;
-  height: 80px;
-}
 .add {
   background-color: #a08ebb;
   color: white;
   border: none;
-  border-radius: 5px;
-  width: 10rem;
-  height: 45%;
-  margin-top: 20px;
+  border-radius: 15px;
+  width: 5rem;
   cursor: pointer;
+  padding: 0.5rem;
+  margin-top: 2.5rem;
 }
