@@ -92,7 +92,8 @@ nav {
   padding: 1rem;
   margin: 1.5rem;
   font-weight: 700;
-  border: 1px solid yellow;
+  border: 1px solid #ff9898;
+  border-radius: 5px;
 }
 
 .wochentage {
