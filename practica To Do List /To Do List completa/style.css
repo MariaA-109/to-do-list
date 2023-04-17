@@ -1,0 +1,195 @@
+/* font-family: 'Dosis', sans-serif; 200/400/700*/
+
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+}
+
+/* beginn header */
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #ff9898;
+  width: 100%;
+  height: 80px;
+  /* border: 1px solid blue; */
+}
+
+#resetBtn {
+  box-sizing: content-box;
+  font-size: 20px;
+  height: 50px;
+  width: 20%;
+  margin-top: 1rem;
+  border: none;
+  color: white;
+  background-color: #a08ebb;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem;
+  /* border: 1px solid blue; */
+}
+
+.daily {
+  font-family: "Dosis", sans-serif;
+  font-weight: 200;
+  font-size: 4rem;
+  padding: 1rem;
+  /* border: 1px solid green; */
+}
+
+.creates {
+  padding: 20px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 200;
+  font-size: 2rem;
+  /* border: 1px solid yellow; */
+}
+
+/* uhr */
+.container {
+  font-family: "Dosis", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  width: fit-content;
+  border: 1px solid #a08ebb;
+  border-radius: 5px;
+}
+
+#current-time {
+  padding: 0.5rem;
+  font-size: 20px;
+}
+
+/* .quotes {
+} */
+
+/* tabelle - Kalender*/
+
+.kalender {
+  font-family: "Dosis", sans-serif;
+  font-weight: 200;
+  margin-left: 10%;
+  font-size: 2rem;
+  padding: 30px;
+}
+
+.wochentage {
+  padding: 10px;
+}
+
+#calender tr td {
+  position: absolute;
+}
+
+.calendar_day {
+  font-size: 2rem;
+  padding: 20px;
+}
+
+.calender_numbers {
+  padding: 100px;
+  border: solid;
+  font-size: 1.2rem;
+}
+
+/* ende header */
+
+/* main */
+.new-todo {
+  padding: 2rem;
+  justify-items: center;
+  text-align: center;
+  background-color: #fff6c0;
+  width: 80%;
+  height: 60vh;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  /* border: 1px solid green; */
+}
+
+#newTodo {
+  justify-content: center;
+  font-size: 20px;
+  width: 30%;
+  cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #a08ebb;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: 200;
+  margin-bottom: 1rem;
+  /* border: 0.3px solid red; */
+}
+
+#addbutton {
+  box-sizing: content-box;
+  font-size: 20px;
+  height: 50px;
+  width: 8%;
+  border: none;
+  color: white;
+  background-color: #a08ebb;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  /* border: 1px solid blue; */
+}
+#todosBox {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 20px;
+  width: 60%;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  /* border: 1px solid blue; */
+}
+
+.todo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  justify-content: flex-start;
+  flex-direction: row;
+  border: 1px solid #a08ebb;
+  margin-bottom: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  border: 1px solid blue;
+}
+
+.todo:hover {
+  background-color: #ceedc7;
+}
+
+.bi.bi-circle,
+.bi.bi-check-circle-fill {
+  margin-right: 0.7rem;
+}
+
+.bi.bi-pencil-square,
+.bi.bi-trash {
+  margin: 0rem 0.5rem 0rem 0.7rem;
+}
+
+.p {
+  display: flex;
+  margin-right: 8rem;
+  /* border: 1px solid blue; */
+}
